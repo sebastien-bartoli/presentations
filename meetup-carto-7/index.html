@@ -14,17 +14,27 @@
 				</section>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/0.96/head.min.js"></script>
         <script src="reveal.js/js/reveal.js"></script>
         <script>
             Reveal.initialize({
 			    dependencies: [
-			        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			        // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
-			        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    // Interpret Markdown in <section> elements
+                    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 
-			        { src: 'plugin/notes/notes.js', async: true },
-			    ]
+                    // Syntax highlight for <code> elements
+                    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                    // Zoom in and out with Alt+click
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+
+                    // Speaker notes
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true }
+                ]
 			});
         </script>
     </body>
