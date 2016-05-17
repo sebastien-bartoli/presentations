@@ -1,12 +1,18 @@
 # Google Maps : odysée au dela de mon trajet de vacances.
 
+===
+
 ## Intro 
+
+---
 
 ### Le qui
 
 Sébastien, je suis développeur web. Ma passion c'est le code. Ma seconde pasison, c'est les cartes. Du coup j'aime bien faire des deux. Je suis passé par des agences de comm, des agences web, puis maintenant je travaille pour les Scouts et Guides de France.
 
 Depuis que je travaille dans le milieu du web, j'ai eu l'occasion de mettre en place quelques projets cartographiques dont j'aimerai vous partager l'experience.
+
+---
 
 ### Le quoi
 
