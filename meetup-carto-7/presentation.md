@@ -1,6 +1,3 @@
-
-
-
 # Google Maps : odysée au dela de mon trajet de vacances.
 
 ## Intro 
